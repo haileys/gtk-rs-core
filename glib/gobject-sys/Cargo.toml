@@ -39,6 +39,7 @@ repository = "https://github.com/gtk-rs/gtk-rs-core"
 version = "0.18.5"
 edition = "2021"
 rust-version = "1.70"
+links = "gobject-2.0"
 
 [package.metadata.docs.rs]
 all-features = true
