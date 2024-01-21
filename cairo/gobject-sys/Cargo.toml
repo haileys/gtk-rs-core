@@ -1,0 +1,32 @@
+[package]
+name = "cairo-gobject-sys-rs"
+license = "MIT"
+authors = ["The gtk-rs Project Developers"]
+homepage = "https://gtk-rs.org/"
+description = "FFI bindings to libcairo"
+version = "0.18.0"
+keywords = ["cairo", "ffi", "gtk-rs", "gnome"]
+repository = "https://github.com/gtk-rs/gtk-rs-core"
+build = "build.rs"
+edition = "2021"
+rust-version = "1.70"
+links = "cairo-gobject"
+
+[package.metadata.system-deps."cairo-gobject"]
+name = "cairo-gobject"
+version = "1.14"
+feature = "use_glib"
+
+[package.metadata.system-deps."cairo-gobject".v1_16]
+version = "1.16"
+
+[package.metadata.system-deps."cairo-gobject".v1_18]
+version = "1.17"
+
+[build-dependencies]
+system-deps = "6"
+
+[dependencies.glib]
+package = "glib-sys"
+path = "../../glib/sys"
+version = "0.18"

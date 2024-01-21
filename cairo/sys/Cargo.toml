@@ -10,6 +10,7 @@ repository = "https://github.com/gtk-rs/gtk-rs-core"
 build = "build.rs"
 edition = "2021"
 rust-version = "1.70"
+links = "cairo"
 
 [package.metadata.system-deps.cairo]
 name = "cairo"
@@ -19,17 +20,6 @@ version = "1.14"
 version = "1.16"
 
 [package.metadata.system-deps.cairo.v1_18]
-version = "1.17"
-
-[package.metadata.system-deps."cairo-gobject"]
-name = "cairo-gobject"
-version = "1.14"
-feature = "use_glib"
-
-[package.metadata.system-deps."cairo-gobject".v1_16]
-version = "1.16"
-
-[package.metadata.system-deps."cairo-gobject".v1_18]
 version = "1.17"
 
 [lib]
@@ -51,6 +41,7 @@ win32-surface = ["winapi"]
 
 [dependencies]
 libc = "0.2"
+cairo-gobject-sys-rs = { path = "../gobject-sys" }
 
 [dependencies.glib]
 package = "glib-sys"

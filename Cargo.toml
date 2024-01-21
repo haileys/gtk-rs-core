@@ -4,6 +4,7 @@ resolver = "2"
 members = [
   "cairo",
   "cairo/sys",
+  "cairo/gobject-sys",
   "gdk-pixbuf",
   "gdk-pixbuf/sys",
   "gio",
