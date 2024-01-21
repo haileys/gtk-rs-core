@@ -1636,7 +1636,7 @@ extern "C" {
 
 #[cfg(feature = "use_glib")]
 #[cfg_attr(docsrs, doc(cfg(feature = "use_glib")))]
-pub mod gobject;
+pub use cairo_gobject_sys_rs as gobject;
 
 pub const STATUS_SUCCESS: i32 = 0;
 pub const STATUS_NO_MEMORY: i32 = 1;
